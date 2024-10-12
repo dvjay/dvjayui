@@ -1,6 +1,19 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "defaultBase": "main",
+  "defaultProject": "main",
+  "generators": {
+    "@nx/react": {
+      "application": {
+        "babel": true,
+        "linter": "eslint"
+      },
+      "component": {},
+      "library": {
+        "linter": "eslint"
+      }
+    }
+  },
   "plugins": [
     {
       "options": {
@@ -33,5 +46,9 @@
     "lint": {
       "cache": true
     }
+  },
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "packages"
   }
 }

@@ -26,3 +26,8 @@ dist-ssr
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov
+
+
+
+.nx/cache
+.nx/workspace-data

@@ -45,7 +45,10 @@
     },
     "lint": {
       "cache": true
-    }
+    },
+    "storybook:build": {
+      "inputs": ["default", "^production", "{workspaceRoot}/.storybook/**/*"]
+    },
   },
   "workspaceLayout": {
     "appsDir": "apps",
